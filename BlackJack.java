@@ -12,6 +12,11 @@ public class BlackJack {
 		System.out.println(c1);
 		System.out.println(c2);
 		System.out.println(c3);
+		
+		Deck d = new Deck();
+		System.out.println(d);
+		System.out.println(d.getCard(15));
+		
 	}
 
 }
