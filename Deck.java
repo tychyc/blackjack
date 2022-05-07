@@ -1,19 +1,28 @@
 package blackjack;
 
 public class Deck {
-	private Card[] Deck;
-	private int DeckSize = 52;
+	private Card[] deck;
+	
 		
 	public Deck() {
-		Deck = new Card[52];	
-		
+		deck = new Card[52];	
+		int color = 4;
+		int value = 13;
+		int cardCount = 0;
+        for (int i = 1; i <= color; i++)
+            for (int j = 1; j <= value; j++) {
+                deck[cardCount] = new Card(i, j);
+                cardCount++;
+                }
+        
+        
 	}
 	public String toString() {
-			return "" + this.Card + ',';
+		return "" + this.deck + ".";
 	}
-	public void getCard() {
-		int i = 0;
-		
+	String getCard() {
+		int i =15;
+		return "." + i;
 	}
 
 }
