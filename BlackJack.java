@@ -17,6 +17,7 @@ public class BlackJack {
 		System.out.println(d);
 		System.out.println(d.getCard(15));
 		
+		
 	}
 
 }
